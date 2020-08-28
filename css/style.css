@@ -3,38 +3,245 @@
     padding:0;
 }
 
-header {
-    background-color: #171416;
-    width: 100%;
-    height: 200px;
+body{
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-div#card-pessoal{
-    margin-top: 140px;
+header {
+    position: absolute;
+    background-color: #171416;
+    width: 100%;
+    height: 200px;
+}
+
+main{
+    position: relative;
+    /*background-color: aquamarine;*/
+    width: 900px;
+    height: 1000px;
+    float: left;
+}
+
+.card{
     background-color: #f5f5f7;
     width: 900px;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.25);
+    margin-bottom: 50px;
+}
+
+div#imagem{
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    background-image: url(../img/me.jpg);
+    background-position: center;
+    background-size: cover;
+}
+div#card-pessoal{
+    position: relative;
+    margin-top: 20px;
     height: 350px;
 }
 
+div#card-pessoal span{
+    position: absolute;
+    color: #171416;
+    margin-left: 320px;
+    font-size: 18px;
+}
+
+.card-título{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 85px;
+    font-size: 28px !important;
+    font-weight: bold;
+    color: #171416;
+}
+
+div#card-pessoal span#subtítulo{
+    margin-top: 45px;
+    color: #828282;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+div#linha{
+    width: 455px;
+    position: absolute;
+    margin-top: 55px;
+    margin-left: 320px;
+    border: 1px solid #a8a8a8;
+}
+
+div#card-pessoal footer{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-left: 300px;
+    width: 600px;
+    height: 60px;
+    align-items: center;
+    background-color: #171416;
+    bottom: 0px;
+}
+
+div#card-pessoal footer a{
+    width: 120px;
+    height: 60px;
+    color: #f5f5f7;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+}
+
+div#card-sobre{
+    height: 260px;
+}
+
+.linha{
+    position: absolute;
+    border: 1px solid #a8a8a8;
+    width: 730px;
+    margin-left: 85px;
+    margin-top: 75px;
+}
+
+.card-text{
+    text-align: justify;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: lighter;
+}
+
+div#card-sobre p{
+    position: absolute;
+    width: 730px;
+    margin-left: 85px;
+    margin-top: 100px;
+}
+div#card-formação{
+    height: 500px;
+}
+
+div#card-formação ul{
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 100px;
+}
+
+div#card-formação ul li{
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+div#card-formação ul span{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+div#card-formação ul p{
+    width: 670px;
+    margin-bottom: 30px;
+}
+
+div#card-profissional{
+    height: 245px;
+}
+
+div#card-profissional ul{
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 100px;
+}
+
+div#card-profissional ul li{
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+div#card-profissional ul span{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+div#card-habilidades{
+    height: 400px;
+}
+
 h1#nome{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-size: 50px;
     font-weight: bold;
     color: #FFF;
-    position: absolute;
-    margin-top: 50px;
-    margin-left: -700px;
+    margin-top: 5%;
 }
-span#profissão{
-    color: #FFF;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: lighter;
-    position: absolute;
-    margin-top: 90px;
-    margin-left: -835px;
 
+h2#profissão{
+    color: #FFF;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+div#main{
+    position: absolute;
+    width: 730px;
+    height: 300px;
+    margin-left: 55px;
+    margin-top: 85px;
+    display: flex;
+    flex-flow: row wrap;
+    /*padding-left: 20px;*/
+}
+
+.coluna-50{
+    width: 50%;
+    height: 80px;
+}
+
+div#main span{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.status-100{
+    width: 236px;
+    height: 15px;
+    border-radius: 22px;
+    background-color: #c4c4c4;
+    margin-top: 15px;
+}
+
+div#meu-status-vl{
+    width: 141.6px;
+    height: 15px;
+    border-radius: 22px;
+    background-color: #171416
+}
+
+div#meu-status-ft{
+    width: 70.8px;
+    height: 15px;
+    border-radius: 22px;
+    background-color: #171416
+}
+
+div#meu-status-qm{
+    width: 177px;
+    height: 15px;
+    border-radius: 22px;
+    background-color: #171416
+}
+
+div#meu-status-fr{
+    width: 212.4px;
+    height: 15px;
+    border-radius: 22px;
+    background-color: #171416
 }
